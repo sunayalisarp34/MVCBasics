@@ -1,0 +1,20 @@
+﻿@model List<Employee>
+
+<div>
+	<table>
+        <tr>
+            <td>ID</td>
+            <td>Ad</td>
+            <td>Soyad</td>
+            <td>Yaş</td>
+        </tr>
+    @foreach(Employee employee in @Model){
+        <tr>
+            <td>@employee.Id</td>
+            <td>@employee.FirstName</td>
+            <td>@employee.LastName</td>
+            <td>@employee.Age</td>
+        </tr>
+	}
+    </table>
+</div>
